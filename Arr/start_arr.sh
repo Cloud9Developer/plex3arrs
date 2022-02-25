@@ -38,6 +38,7 @@ while true; do
 	      exit 1
 	   fi
    done
+   sleep 60
 done
 
 exit 1
