@@ -1,4 +1,4 @@
-###plex3arrs
+#plex3arrs
 
 Sonarr, Radarr, and Bazarr docker containers
 
