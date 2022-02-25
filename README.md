@@ -1,9 +1,9 @@
-#plex3arrs
+# plex3arrs
 
 Sonarr, Radarr, and Bazarr docker containers
 
 
-##Pre-Reqs
+## Pre-Reqs
 
 Install docker on your given OS
 
