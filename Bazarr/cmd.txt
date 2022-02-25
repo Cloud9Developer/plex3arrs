@@ -1,0 +1,1 @@
+docker run -p 6767:6767 -v /PATH/TO/MEDIA:/mnt/media -v /PATH/TO/BAZARR/CONFIG/FILES:/opt/bazarr/data -d bazarr

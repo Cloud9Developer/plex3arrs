@@ -1,0 +1,1 @@
+docker run -p 8989:8989 -p 7878:7878 -p 6767:6767 -v /PATH/TO/MEDIA:/mnt/media -v /PATH/FOR/SONARR/CONFIG/FILES:/root/.config/NzbDrone -v /PATH/FOR/RADARR/CONFIG/FILES:/root/.config/Radarr -v /PATH/FOR/BAZARR/CONFIG/FILES:/opt/bazarr/data -d three-arrs

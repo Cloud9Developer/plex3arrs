@@ -1,0 +1,1 @@
+docker run -p 8989:8989 -v /PATH/TO/MEDIA:/mnt/media -v /PATH/TO/SONARR/CONFIG/FILES:/root/.config/NzbDrone -d sonarr
