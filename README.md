@@ -24,7 +24,7 @@ Depending on the docker container you want to build/run, there is a cmd.txt file
 
 There are some changes to the command that will need to be made to run successfully, and I'll use 'Arr' as an example since it runs all 3 \*arrs at once:
 
-`docker run -p 8989:8989 -p 7878:7878 -p 6767:6767 -v /PATH/TO/MEDIA:/mnt/media -v /PATH/FOR/SONARR/CONFIG/FILES:/root/.config/NzbDrone -v /PATH/FOR/RADARR/CONFIG/FILES:/root/.config/Radarr -v /PATH/FOR/BAZARR/CONFIG/FILES:/opt/bazarr/data -d three-arrs`
+`docker run -p 8989:8989 -p 7878:7878 -p 6767:6767 -v /PATH/TO/MEDIA:/mnt/media -v /PATH/FOR/SONARR/CONFIG/FILES:/root/.config/Sonarr -v /PATH/FOR/RADARR/CONFIG/FILES:/root/.config/Radarr -v /PATH/FOR/BAZARR/CONFIG/FILES:/opt/bazarr/data -d three-arrs`
 
 - `/PATH/TO/MEDIA`
   - Needs to be changed to the path pointing to your local media location
