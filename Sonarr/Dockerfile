@@ -33,10 +33,14 @@ RUN apt-get install gnupg ca-certificates -y && \
 
 #Sonarr install
 
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0xA236C58F409091A18ACA53CBEBFF6B99D9B78493 && \
-	echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list && \
+#RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0xA236C58F409091A18ACA53CBEBFF6B99D9B78493 && \
+#	echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list && \
+#	apt-get update && \
+#	apt-get install nzbdrone -y
+RUN	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2009837CBFFD68F45BC180471F4F90DE2A9B4BF8 && \
+	echo "deb https://apt.sonarr.tv/ubuntu focal main" | tee /etc/apt/sources.list.d/sonarr.list && \
 	apt-get update && \
-	apt-get install nzbdrone -y
+	apt-get install sonarr -y
 
 EXPOSE 8989
 
@@ -44,7 +48,8 @@ EXPOSE 8989
 
 #RUN mono /opt/NzbDrone/NzbDrone.exe
 #CMD ["/usr/bin/mono /opt/NzbDrone/NzbDrone.exe"]
-CMD ["/usr/bin/mono", "/opt/NzbDrone/NzbDrone.exe"]
+#CMD ["/usr/bin/mono", "/opt/NzbDrone/NzbDrone.exe"]
+CMD ["/usr/bin/mono", "/usr/lib/sonarr/bin/Sonarr.exe"]
 
 #RUN useradd --create-home user1
 #USER user1

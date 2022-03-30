@@ -11,7 +11,8 @@ function checkpid() {
 }
 
 echo Starting Sonarr..
-/usr/bin/mono /opt/NzbDrone/NzbDrone.exe &
+#/usr/bin/mono /opt/NzbDrone/NzbDrone.exe &
+/usr/bin/mono /usr/lib/sonarr/bin/Sonarr.exe &
 pid_sonarr=$!
 echo $pid_sonarr
 
