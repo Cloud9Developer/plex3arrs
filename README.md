@@ -12,7 +12,7 @@ Build docker containers ( `docker build -t NAME .` ), following these naming con
 	- Bazarr: bazarr
 	- Sonarr: sonarr
 	- Radarr: radarr
-	- Arr: three-arrs
+	- All 3 "Arrs": three-arrs
 
 *NOTE*: You don't HAVE to use the names listed above but it the cmd.txt files do use these as examples, so replace as desired.
 
